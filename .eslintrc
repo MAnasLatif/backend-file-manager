@@ -1,0 +1,44 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:prettier/recommended",
+    "prettier"
+  ],
+  "rules": {
+    "@typescript-eslint/explicit-member-accessibility": 0,
+    "@typescript-eslint/explicit-function-return-type": 0,
+    "@typescript-eslint/no-parameter-properties": 0,
+    "@typescript-eslint/interface-name-prefix": 0,
+    "@typescript-eslint/no-empty-object-type": 0,
+    "@typescript-eslint/explicit-module-boundary-types": 0,
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/ban-types": "off",
+    "@typescript-eslint/no-var-requires": "off",
+    "prettier/prettier": [
+      "error",
+      {
+        "tabWidth": 2,
+        "semi": true,
+        "singleQuote": true,
+        "trailingComma": "all",
+        "printWidth": 120,
+        "endOfLine": "auto",
+        "bracketSpacing": true
+      }
+    ]
+  },
+  "ignorePatterns": [
+    "node_modules",
+    "dist",
+    "logs",
+    "build",
+    "coverage"
+  ]
+}
