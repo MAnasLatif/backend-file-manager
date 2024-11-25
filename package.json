@@ -5,10 +5,10 @@
   "author": "M Anas Latif <open.source@anaslatif.com> (https://m.anaslatif.com)",
   "license": "MIT",
   "scripts": {
-    "dev": "cross-env NODE_ENV=dev nodemon",
-    "start": "npm run build && cross-env NODE_ENV=pro node dist/server.js",
+    "dev": "cross-env NODE_ENV=development nodemon",
+    "start": "npm run build && cross-env NODE_ENV=production node dist/server.js",
     "build": "tsc --project tsconfig.json && tsc-alias -p tsconfig.json",
-    "test": " cross-env NODE_ENV=test&& jest",
+    "test": " cross-env NODE_ENV=test && jest",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write ."
