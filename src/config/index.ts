@@ -7,6 +7,10 @@ dotenv.config({ path: envFile });
 const _config = {
   PORT: process.env.PORT || '5000',
   NODE_ENV: process.env.NODE_ENV || 'development',
+  DATA_FILE: process.env.DATA_FILE || 'storage',
+  LOGS_PATH: process.env.LOGS_PATH || 'default',
+  LOGS: process.env.LOGS || 'ON',
+  LOGS_TIME: process.env.LOGS_TIME || '7d',
 };
 
 export default {
