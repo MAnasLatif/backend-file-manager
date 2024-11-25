@@ -8,6 +8,8 @@ const _config = {
   PORT: process.env.PORT || '5000',
   NODE_ENV: process.env.NODE_ENV || 'development',
   DATA_FILE: process.env.DATA_FILE || 'storage',
+  DB_FILE: process.env.DB_FILE || 'SQLite.db',
+  DB_PATH: process.env.DB_PATH || 'default',
   LOGS_PATH: process.env.LOGS_PATH || 'default',
   LOGS: process.env.LOGS || 'ON',
   LOGS_TIME: process.env.LOGS_TIME || '7d',
