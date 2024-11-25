@@ -1,6 +1,6 @@
 import morgan from 'morgan';
 
-import { NODE_ENV } from '@/config';
+import config from '@/config';
 import logger from '@/config/logger';
 
 const stream = {
@@ -14,7 +14,7 @@ const stream = {
 };
 
 const skip = () => {
-  return NODE_ENV === 'test';
+  return config.isTest();
 };
 
 const morganMiddleware = morgan(':method :url :status :response-time ms', { stream, skip });
