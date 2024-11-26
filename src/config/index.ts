@@ -13,6 +13,7 @@ const _config = {
   LOGS_PATH: process.env.LOGS_PATH || 'default',
   LOGS: process.env.LOGS || 'ON',
   LOGS_TIME: process.env.LOGS_TIME || '7d',
+  ADMIN_TOKEN: process.env.ADMIN_TOKEN || '',
 };
 
 export default {

@@ -1,7 +1,10 @@
 import { Router } from 'express';
 import appsController from '@/controllers/apps.controller';
+import adminAuth from '@/middleware/adminAuth.middleware';
 
 const router = Router();
+
+router.use(adminAuth);
 
 router.post('/', appsController.create);
 router.put('/:key', appsController.update);
